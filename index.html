@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="index.css">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="index.css">
+      <title>Ron Yitzhak CV</title>
+   </head>
 
-<title>Ron Yitzhak CV</title>
+   <body onload="load()" style="display: none;">
 
-</head>
-<body onload="load()" style="display: none;">
-
-   <div class="navbar">
-      <a onclick="homeNav()">Home</a>
-      <a onclick="aboutNav()">About</a>
-      <a onclick="experienceNav()" id="exp">Expericene</a>
-      <a onclick="contactNav()">Contact</a>
-    </div>
-
-<div id="home">
-   <div class="centered">Hello, I'm <br>
-      <a>Ron Yitzhak</a><br>
-   I'm full-stack web developer<br>
-   <br>
-   <button ><a href="https://drive.google.com/file/d/1QtMCdm45TA-YNWC01ktVzwHfESe-2kB5/view?usp=sharing" style="color:white;" >Download CV</a></button></div>
-   
-</div>
-
-<div id="about" style=" padding: 4vw; border: 5px solid  rgb(93, 93, 93); border-width: 1px 0px 0px 0px;">
-   <h1>About</h1>
-   <hr >
-      <div id="para" style="margin-top:15px; width:100%;    vertical-align: top;">
-         Hi, my name is Ron Yitzhak, I live at Kiryat Ono<br>
-         I'm a web developer with a Bachelor (BSc) of software Engineering from Ben-Gurion University of the Negev. <br>
-        Since I was born, as a child I had the passion for web development.<br>
-        Through the years I realized that web development is what I like to do the most.<br>
-         I'm highly motivated to succeed, curious, creative, autodidact and  team player.
+      <div class="navbar">
+         <a onclick="homeNav()">Home</a>
+         <a onclick="aboutNav()">About</a>
+         <a onclick="experienceNav()" id="exp">Expericene</a>
+         <a onclick="contactNav()">Contact</a>
       </div>
 
-      <div style=" width:100%;      padding-top:25px; ">
-         <img id="imgsidenav" style="
-         display: block;
-  margin-left: auto;
-  margin-right: auto; margin-top:25px; margin-bottom:15px; box-shadow: 6px 6px 3px grey;  width: calc(29vw);
-         height: calc(29vw); border-radius: 50%;" src="https://app.comf.co.il/moorsheiknisa1/ron1.png"></img>
+      <div id="home">
+         <div class="centered">Hello, I'm <br>
+            <a>Ron Yitzhak</a><br>
+            I'm full-stack web developer<br>
+            <br>
+            <button><a href="https://drive.google.com/file/d/1QtMCdm45TA-YNWC01ktVzwHfESe-2kB5/view?usp=sharing"
+                  style="color:white;">Download CV</a></button>
+         </div>
+
       </div>
-</div>
+
+      <div id="about">
+         <h1>About</h1>
+         <hr>
+         <div id="para">
+            Hi, my name is Ron Yitzhak, I live at Kiryat Ono<br>
+            I'm a web developer with a Bachelor (BSc) of software Engineering from Ben-Gurion University of the Negev.
+            <br>
+            Since I was born, as a child I had the passion for web development.<br>
+            Through the years I realized that web development is what I like to do the most.<br>
+            I'm highly motivated to succeed, curious, creative, autodidact and team player.
+         </div>
+
+         <div style=" width:100%;      padding-top:25px; ">
+            <img id="imgsidenav"></img>
+         </div>
+      </div>
 
 
 
 
-<div id="experience" style="padding: 4vw; border: 5px solid  rgb(93, 93, 93); border-width: 1px 0px 0px 0px;">
+      <div id="experience">
+         <h1>Experience</h1>
+         <hr>
+         <div id="para2">
+            <a>Com-Future | 2019 - 2021 - Full Stack Web Developer</a>
+            <ul>
+               <li>Front-End: HTML, CSS, Javascript, Bootstrap, JQuery, Java.</li>
+               <li>Back-End: Node.js, ASP.NET, C#.</li>
+               <li>DB: Microsoft SQL server</li>
+            </ul>
 
-   
-   <h1>Experience</h1>
-<hr>
-   <div id="para2" style="	background-color: rgb(223, 223, 223);   margin-top:15px; width:100%; display: inline-block;   vertical-align: top; ">
-      <a style="font-weight: bolder; ">Com-Future | 2019 - 2020 - Full Stack Web Developer</a>
-      <ul>
-         <li>Front-End: HTML, CSS, Javascript, Bootstrap, JQuery, Java.</li>
-         <li>Back-End: Node.js, ASP.NET, C#.</li>
-         <li>DB: Microsoft SQL server</li>
-       </ul>  
-         
-       <p>As a web developer, I developed web-based applications for Mobile devices for local authorities in Israel.<br>
-          I built and designed web applications from scratch, including Client Side and Server side, using HTTP requests messages.<br>
-          I deployed these applications by IIS (Internet Information Services). <br>
-         </p>
-         <br>
-         <a style="font-weight: bolder; ">What more?</a>
-         <p>Programmed in Java, C#,  XML, Android, SQL, JSON, REACT.<br>
-            Operating Systems: Windows, Linux/UNIX<br>
-            Development Environment: Microsoft Visual Studio, Visual Studio Code, Eclipse, Android Studio, Xampp, Microsoft SQL server.<br>
-           </p>
-           <br>
+            <p>As a web developer, I developed web-based applications for Mobile devices for local authorities in
+               Israel.<br>
+               I built and designed web applications from scratch, including Client Side and Server side, using HTTP
+               requests messages.<br>
+               I deployed these applications by IIS (Internet Information Services). <br>
+            </p>
 
-    
+            <br>
+            <a>What more?</a>
+            <p>Programmed in Java, C#, XML, Android, SQL, JSON, REACT.<br>
+               Operating Systems: Windows, Linux/UNIX<br>
+               Development Environment: Microsoft Visual Studio, Visual Studio Code, Eclipse, Android Studio, Xampp,
+               Microsoft SQL server.<br>
+            </p>
+            <br>
+         </div>
+      </div>
 
-   </div>
-</div>
+      <div id="contact">
+         <h1>Contact Me!</h1>
+         <hr>
+         <p>Email: ronchu90@gmail.com</p>
+         <p>Phone Number: 052-894-1151</p>
+         <p>Linkedin:</p>
+         <button onclick="tolinkedin()" id="linkedin"></button>
 
-<div id="contact" style=" padding: 4vw 4vw 4vw 4vw;
-text-align: center; border: 5px solid  rgb(93, 93, 93); border-width: 1px 0px 1px 0;">
-   <h1>Contact Me!</h1>
-   <hr>
-   <p>Email: ronchu90@gmail.com</p>
-   <p>Phone Number: 052-894-1151</p>
-   <p>Linkedin:</p>
-   <button onclick="tolinkedin()" id="linkedin" style="background-color: white; height: 13vw; width: 13vw; border-radius:6px; border:0px solid blue; background-image: url('https://app.comf.co.il/moorsheiknisa/pics/Linked.png'); background-size: cover;"></button>
+      </div>
 
-</div>
+      <script src="index.js"></script>
+   </body>
 
-<script src="index.js"></script> 
-</body>
 </html>
