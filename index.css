@@ -3,18 +3,15 @@ body, html {
 	height: 100%;
 	margin: 0;
 	font-family: cursive;
-
   }
   
   .navbar {
-	
 	overflow: hidden;
 	background-color: #333;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 999;
-
   }
   
   .navbar a {
@@ -25,8 +22,6 @@ body, html {
 	margin: 0;
 	padding: 10px 11px 10px 11px;
 	font-size: calc(1.1vw + 1.1vh);
-
-
   }
   
   .navbar a:hover {
@@ -35,13 +30,8 @@ body, html {
   }
   
   #home {
-	/* The image used */
-	background-image: url("https://app.comf.co.il/moorsheiknisa/pics/imagedesktop.JPG");
-  
-	/* Full height */
+	background-image: url("./imagedesktop.jpg");
 	height: 100%; 
-  
-	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -51,8 +41,6 @@ body, html {
   #about {
 	/* The image used */
 	background-color: white;
-  
-
   }
   
   #experience {
@@ -89,12 +77,8 @@ body, html {
   }
 
   
-
-
 	#para, #para2, #contact{
 		font-size: calc(0.8vw + 0.8vh + 1vmin);
-	
-
   }
 
 
@@ -107,10 +91,70 @@ button{
 	border-radius: 7px;
 }
 
+#about{
+	padding: 4vw;
+	border: 5px solid  rgb(93, 93, 93);
+	border-width: 1px 0px 0px 0px;
+}
 
+#contact{
+	padding: 4vw 4vw 4vw 4vw;
+	text-align: center;
+	border: 5px solid  rgb(93, 93, 93);
+	border-width: 1px 0px 1px 0;
+}
 
+#linkedin{
+	background-color: white;
+	height: 13vw;
+	width: 13vw;
+	border-radius:6px;
+	background-image: url('./Linked.png');
+	background-size: cover;
+	border: 0px;
+}
 
+#experience{
+	padding: 4vw;
+	border: 5px solid  rgb(93, 93, 93);
+	border-width: 1px 0px 0px 0px;
 
+}
+
+#para{
+	margin-top:15px;
+	width:100%;
+	vertical-align: top;
+}
+
+#para2{
+	background-color: rgb(223, 223, 223);
+	margin-top:15px;
+	width:100%;
+	display: inline-block;
+	vertical-align: top; 
+}
+
+#para2 a{
+	font-weight: bolder; 
+}
+
+#imgsidenav{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:25px;
+	margin-bottom:15px;
+	box-shadow: 6px 6px 3px grey;
+	width: calc(29vw);
+	height: calc(29vw);
+	border-radius: 50%;
+}
+
+#imgsidenav{
+	src: url("./imagedesktop.jpg");
+}
 
 @media only screen and (max-width: 600px) {
 	body, html {
@@ -120,7 +164,7 @@ button{
 
 	  #home{
 		  /* The image used */
-		background-image: url("https://app.comf.co.il/moorsheiknisa/pics/imgmobile.png");
+		background-image: url("./imgmobile.png");
 	  
 	  }
 
