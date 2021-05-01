@@ -6,8 +6,6 @@ function load(){
         document.getElementsByClassName("centered")[0].style.fontSize = "30px";
         document.body.removeAttribute("style");
         document.body.style.fontFamily = "Arial";
-        
-
     }else{
         document.body.removeAttribute("style");
     }
@@ -21,15 +19,11 @@ function homeNav(){
 }
 
 
-
-
 function aboutNav(){
     $('html,body').animate({
         scrollTop: $("#about").offset().top},
         'slow');
 }
-
-
 
 function experienceNav(){
     $('html,body').animate({
