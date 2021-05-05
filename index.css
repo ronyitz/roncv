@@ -5,6 +5,7 @@ body, html {
 	font-family: cursive;
   }
   
+  /* Navigation Bar Properties */
   .navbar {
 	overflow: hidden;
 	background-color: #333;
@@ -28,7 +29,17 @@ body, html {
 	background: #ddd;
 	color: black;
   }
-  
+
+    /* Header Pages */
+
+  h1{
+	font-size: 40px;
+	 text-align: center;
+  }
+
+
+  /* Home Page */
+
   #home {
 	background-image: url("./imagedesktop.jpg");
 	height: 100%; 
@@ -36,53 +47,25 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
   }
-  
-  
-  #about {
-	/* The image used */
-	background-color: white;
-  }
-  
-  #experience {
-	/* The image used */
-	background-color: rgb(223, 223, 223);
-  
-  }
-  
-  #contact {
-	/* The image used */
-	background-color: white;
 
-  }
-  
-  
-  .centered {
+  #home div{
 	position: absolute;
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: calc(1.6vw + 1.6vh + 2vmin);
 	color: white;
-	text-align: center;
-  }
+	text-align: center;  }
+
+ 
   
-  .centered a{
+	#home div a{
 	 color: rgb(0, 45, 63);
 	 font-weight: 700;
-  }
-  
-  h1{
-	font-size: 40px;
-	 text-align: center;
+	 
   }
 
   
-	#para, #para2, #contact{
-		font-size: calc(0.8vw + 0.8vh + 1vmin);
-  }
-
-
-
 button{
 	padding: 10px 20px 10px 20px;
 	background-color: #333333;
@@ -91,56 +74,33 @@ button{
 	border-radius: 7px;
 }
 
-#about{
+
+
+
+
+  /* About Page */
+
+  #about{
 	padding: 4vw;
 	border: 5px solid  rgb(93, 93, 93);
 	border-width: 1px 0px 0px 0px;
 }
 
-#contact{
-	padding: 4vw 4vw 4vw 4vw;
-	text-align: center;
-	border: 5px solid  rgb(93, 93, 93);
-	border-width: 1px 0px 1px 0;
-}
-
-#linkedin{
-	background-color: white;
-	height: 13vw;
-	width: 13vw;
-	border-radius:6px;
-	background-image: url('./Linked.png');
-	background-size: cover;
-	border: 0px;
-}
-
-#experience{
-	padding: 4vw;
-	border: 5px solid  rgb(93, 93, 93);
-	border-width: 1px 0px 0px 0px;
-
-}
-
-#para{
+#about div{
 	margin-top:15px;
 	width:100%;
 	vertical-align: top;
+	font-size: calc(0.8vw + 0.8vh + 1vmin);
 }
 
-#para2{
-	background-color: rgb(223, 223, 223);
-	margin-top:15px;
-	width:100%;
-	display: inline-block;
-	vertical-align: top; 
+#about div:nth-child(2n){
+	width:100%;      
+	padding-top:25px; 
 }
 
-#para2 a{
-	font-weight: bolder; 
-}
+
 
 #imgsidenav{
-	
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -150,27 +110,71 @@ button{
 	width: calc(29vw);
 	height: calc(29vw);
 	border-radius: 50%;
+	src: url("./imagedesktop.jpg");
+
 }
 
-#imgsidenav{
-	src: url("./imagedesktop.jpg");
+
+
+  /* Experience Page */
+  
+  #experience {
+	background-color: rgb(223, 223, 223);
+	padding: 4vw;
+	border: 5px solid  rgb(93, 93, 93);
+	border-width: 1px 0px 0px 0px;
+
+  }
+
+  #experience div{
+	font-size: calc(0.8vw + 0.8vh + 1vmin);
+	background-color: rgb(223, 223, 223);
+	margin-top:15px;
+	width:100%;
+	display: inline-block;
+	vertical-align: top; 
+  }
+
+  #experience div a{
+	font-weight: bolder; 
+  }
+
+
+  
+
+  /* Contact Page */
+
+#contact{
+	font-size: calc(0.8vw + 0.8vh + 1vmin);
+	padding: 4vw 4vw 4vw 4vw;
+	text-align: center;
+	border: 5px solid  rgb(93, 93, 93);
+	border-width: 1px 0px 1px 0;
 }
+
+#contact button{
+	background-color: white;
+	height: 13vw;
+	width: 13vw;
+	border-radius:6px;
+	background-image: url('./Linked.png');
+	background-size: cover;
+	border: 0px;
+}
+
+
+  
+
+
+
+
+  /* Responsive Mobile Properties */
 
 @media only screen and (max-width: 600px) {
 	body, html {
 		height: 100%;
 		margin: 0;
 	  }
-
-	  #home{
-		  /* The image used */
-		background-image: url("./imgmobile.png");
-	  
-	  }
-
-	.navbar {
-		text-align: center;
-	}
 
 	.navbar a {
 		padding: 10px 2px 10px 2px;
@@ -180,30 +184,21 @@ button{
 		white-space: nowrap;
 		color: #f2f2f2;
 		text-align: center;
-
 	  }
 
-	  #exp{
-		width: 27%;
+	  #home{
+		background-image: url("./imgmobile.png");
 	  }
-	  
 
-	  #para, #para2, #contact{
+	  #about div, #experience div, #contact{
 		font-size: calc(2.8vw + 1.4vmin);
-	  }
+	}
 
-
+	
 
 	  #imgsidenav{
 		width: 200px;
 		height: 200px;
 	  }
-
-	  #linkedin{
-		height: calc(23vw); 
-		width: calc(23vw); 
-	  }
-
-	  
 
   }
