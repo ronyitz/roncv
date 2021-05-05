@@ -10,29 +10,28 @@
    </head>
 
    <body onload="load()" style="display: none;">
-
       <div class="navbar">
-         <a onclick="homeNav()">Home</a>
-         <a onclick="aboutNav()">About</a>
-         <a onclick="experienceNav()" id="exp">Expericene</a>
-         <a onclick="contactNav()">Contact</a>
+         <a onclick="navigate('home')">Home</a>
+         <a onclick="navigate('about')">About</a>
+         <a onclick="navigate('experience')">Expericene</a>
+         <a onclick="navigate('contact')">Contact</a>
       </div>
 
       <div id="home">
-         <div class="centered">Hello, I'm <br>
+         <div>Hello, I'm <br>
             <a>Ron Yitzhak</a><br>
             I'm full-stack web developer<br>
             <br>
             <button><a href="https://drive.google.com/file/d/1QtMCdm45TA-YNWC01ktVzwHfESe-2kB5/view?usp=sharing"
                   style="color:white;">Download CV</a></button>
          </div>
-
       </div>
 
       <div id="about">
          <h1>About</h1>
          <hr>
-         <div id="para">
+
+         <div>
             Hi, my name is Ron Yitzhak, I live at Kiryat Ono<br>
             I'm a web developer with a Bachelor (BSc) of software Engineering from Ben-Gurion University of the Negev.
             <br>
@@ -41,9 +40,8 @@
             I'm highly motivated to succeed, curious, creative, autodidact and team player.
          </div>
 
-         <div style=" width:100%;      padding-top:25px; ">
-            <img id="imgsidenav"  src="./ron.png"></img>
-         </div>
+         <img id="imgsidenav" src="./ron.png"></img>
+      </div>
       </div>
 
 
@@ -52,7 +50,7 @@
       <div id="experience">
          <h1>Experience</h1>
          <hr>
-         <div id="para2">
+         <div>
             <a>Com-Future | 2019 - 2021 - Full Stack Web Developer</a>
             <ul>
                <li>Front-End: HTML, CSS, Javascript, Bootstrap, JQuery, Java.</li>
@@ -84,8 +82,7 @@
          <p>Email: ronchu90@gmail.com</p>
          <p>Phone Number: 052-894-1151</p>
          <p>Linkedin:</p>
-         <button onclick="tolinkedin()" id="linkedin"></button>
-
+         <button onclick="tolinkedin()"></button>
       </div>
 
       <script src="index.js"></script>
